@@ -6,6 +6,7 @@ p {
 	margin: 0;
 	padding: 0;
 	border: 0;
+   
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -16,41 +17,45 @@ button {
 }
 
 body {
-	background: url(../img/black-orchid.png);
-	background-color: #312d36;
-
 	display: flex;
 	justify-content: center;
+
 	margin-top: 200px;
 	/* align-items: center; */
+
+	background: url(../img/black-orchid.png);
+	background-color: #312d36;
 }
 
 #add-task-container {
+	display: flex;
 	width: 500px;
 	max-width: 500px;
-	/* both upper was 350 */
+
 	padding: 30px 20px;
-	background-color: white;
 	border-radius: 15px;
-	box-shadow: 0 0 3px;
-	display: flex;
 	margin-bottom: 20px;
+
+	background-color: white;
+	box-shadow: 0 0 3px;
 }
 
 input {
 	flex: 5;
+	height: 40px;
+
 	margin-right: 5px;
 	border-radius: 10px;
-	font-size: 1.5rem;
 	padding: 5px 15px;
-	/* down one added */
-	height: 40px;
+
+	font-size: 1.5rem;
+
 	border: rgba(0, 0, 0, 0.3) solid 1px;
 }
 
 input:focus {
-	outline: none;
 	color: #000;
+	outline: none;
 }
 
 input::placeholder {
@@ -63,83 +68,93 @@ input:focus::placeholder {
 
 #add-task {
 	flex: 0.5;
-	transition: 0.3s;
 	padding: 5px;
-	background-color: white;
+
 	color: green;
 	border: green solid 2px;
 	border-radius: 10px;
+
+	transition: 0.3s;
+
 	font-size: 1.2rem;
-	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+	background-color: white;
 	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
 }
 
 #add-task:hover {
-	background-color: green;
 	color: #fff;
-	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	background-color: green;
 	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
 }
 
 #task-container {
 	max-width: 470px;
+
 	margin: 0 auto;
 }
 
 .task {
+	display: flex;
+	justify-content: space-between;
 	max-width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 0 3px;
-	padding: 10px;
-	margin-bottom: 10px;
-	display: flex;
-	justify-content: space-between;
 }
 
 .task li {
 	flex: 5;
-	text-decoration: none;
 	padding: 5px;
-	font-size: 1.2rem;
 	overflow: hidden;
+
+	font-size: 1.2rem;
+	text-decoration: none;
 }
 
 .task button {
 	flex: 0.5;
+
 	border-radius: 10px;
 	background-color: #fff;
 }
 
 .task .check-task {
+	margin-right: 5px;
+
+	transition: 0.3s;
+
 	color: orange;
 	border: orange solid 2px;
-	margin-right: 5px;
-	transition: 0.3s;
-	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
 }
 
 .task .check-task:hover {
-	background-color: orange;
 	color: #fff;
-	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	background-color: orange;
 	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
 }
 
 .task .delete-task {
+	transition: 0.3s;
+
 	color: crimson;
 	border: crimson solid 2px;
-	transition: 0.3s;
-	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
 }
 
 .task .delete-task:hover {
-	background-color: crimson;
 	color: #fff;
-	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	background-color: crimson;
 	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
 }
 
 div.line-through li {
