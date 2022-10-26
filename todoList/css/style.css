@@ -1,0 +1,147 @@
+html,
+body,
+div,
+span,
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+button {
+	cursor: pointer;
+}
+
+body {
+	background: url(../img/black-orchid.png);
+	background-color: #312d36;
+
+	display: flex;
+	justify-content: center;
+	margin-top: 200px;
+	/* align-items: center; */
+}
+
+#add-task-container {
+	width: 500px;
+	max-width: 500px;
+	/* both upper was 350 */
+	padding: 30px 20px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 0 3px;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+input {
+	flex: 5;
+	margin-right: 5px;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	padding: 5px 15px;
+	/* down one added */
+	height: 40px;
+	border: rgba(0, 0, 0, 0.3) solid 1px;
+}
+
+input:focus {
+	outline: none;
+	color: #000;
+}
+
+input::placeholder {
+	color: grey;
+}
+
+input:focus::placeholder {
+	color: transparent;
+}
+
+#add-task {
+	flex: 0.5;
+	transition: 0.3s;
+	padding: 5px;
+	background-color: white;
+	color: green;
+	border: green solid 2px;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+}
+
+#add-task:hover {
+	background-color: green;
+	color: #fff;
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+}
+
+#task-container {
+	max-width: 470px;
+	margin: 0 auto;
+}
+
+.task {
+	max-width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 3px;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.task li {
+	flex: 5;
+	text-decoration: none;
+	padding: 5px;
+	font-size: 1.2rem;
+	overflow: hidden;
+}
+
+.task button {
+	flex: 0.5;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.task .check-task {
+	color: orange;
+	border: orange solid 2px;
+	margin-right: 5px;
+	transition: 0.3s;
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+}
+
+.task .check-task:hover {
+	background-color: orange;
+	color: #fff;
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+}
+
+.task .delete-task {
+	color: crimson;
+	border: crimson solid 2px;
+	transition: 0.3s;
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.3);
+}
+
+.task .delete-task:hover {
+	background-color: crimson;
+	color: #fff;
+	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
+}
+
+div.line-through li {
+	text-decoration: line-through;
+}
