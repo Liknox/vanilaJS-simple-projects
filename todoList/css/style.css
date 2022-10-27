@@ -6,7 +6,7 @@ p {
 	margin: 0;
 	padding: 0;
 	border: 0;
-   
+
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -100,14 +100,20 @@ input:focus::placeholder {
 	justify-content: space-between;
 	max-width: 100%;
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 0 3px;
+	transition: box-shadow 0.2s;
 }
 
-.task li {
+.task:hover {
+	-webkit-box-shadow: 0px 10px 27px -6px rgba(255,255,255,0.89); 
+box-shadow: 0px 10px 27px -6px rgba(255,255,255,0.89);
+}
+
+.task span {
 	flex: 5;
 	padding: 5px;
 	overflow: hidden;
@@ -157,6 +163,6 @@ input:focus::placeholder {
 	-webkit-box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.7);
 }
 
-div.line-through li {
+div.line-through span {
 	text-decoration: line-through;
 }
