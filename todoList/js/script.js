@@ -2,7 +2,7 @@ const addTask = document.querySelector("#add-task")
 const inputTask = document.querySelector("#input-task")
 const taskContainer = document.querySelector("#task-container")
 
-addTask.addEventListener("click", function () {
+function creating() {
 	let task = document.createElement("div")
 	task.classList.add("task")
 
@@ -34,4 +34,12 @@ addTask.addEventListener("click", function () {
 		taskContainer.appendChild(task)
 		inputTask.value = ""
 	}
+}
+
+addTask.addEventListener("click", function () {
+	creating()
+})
+
+window.addEventListener("keypress", function (e) {
+	e.key === "Enter" && inputTask.value !== "" ? creating() : null
 })
