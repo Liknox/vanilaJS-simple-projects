@@ -36,9 +36,7 @@ function creating() {
 	}
 }
 
-addTask.addEventListener("click", function () {
-	creating()
-})
+addTask.addEventListener("click", creating)
 
 window.addEventListener("keypress", function (e) {
 	e.key === "Enter" && inputTask.value !== "" ? creating() : null
